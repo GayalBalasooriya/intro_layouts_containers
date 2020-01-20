@@ -6,14 +6,46 @@ class Home extends StatelessWidget {
     return new Container(
       color: Colors.greenAccent,
       alignment: Alignment.center,
-      child: new Text(
-        "Hello Container",
-        textDirection: TextDirection.ltr,
-        style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.w800,
-        ),
+      child: new Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children:<Widget> [
+          new Text(
+            "First item",
+            textDirection: TextDirection.ltr,
+            style: new TextStyle(
+                color: Colors.white
+            ),
+          ),
+          new Text(
+            "Second item",
+            textDirection: TextDirection.ltr,
+            style: new TextStyle(
+                color: Colors.blue
+            ),
+          ),
+
+          new Container(
+            color: Colors.deepOrange.shade50,
+            alignment: Alignment.bottomLeft,
+            child: new Text(
+              "Third item",
+              textDirection: TextDirection.ltr,
+              style: new TextStyle(
+                  color: Colors.blue
+              ),
+            )
+          )
+        ],
       )
+
+//      child: new Text(
+//        "Hello Container",
+//        textDirection: TextDirection.ltr,
+//        style: TextStyle(
+//            color: Colors.white,
+//            fontWeight: FontWeight.w800,
+//        ),
+//      )
     );
   }
 
